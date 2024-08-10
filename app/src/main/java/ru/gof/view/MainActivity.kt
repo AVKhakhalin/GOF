@@ -9,10 +9,6 @@ import ru.gof.chain_of_responsibility.NotifierImplServer
 import ru.gof.chain_of_responsibility.Priority
 
 class MainActivity : AppCompatActivity() {
-    companion object {
-        const val GOF_RESULT_TAG: String = "GOF_RESULT"
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        enableEdgeToEdge()
@@ -22,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
 //            insets
 //        }
+
 
         //region Chain of responsibility
         val notifierImplSMS: NotifierImplSMS = NotifierImplSMS(Priority.LOW)
@@ -38,5 +35,7 @@ class MainActivity : AppCompatActivity() {
         notifierImplSMS.notifyManager(
             Message("Сообщение о тяжёлой неисправности", Priority.HIGH))
         //endregion
+
+
     }
 }
