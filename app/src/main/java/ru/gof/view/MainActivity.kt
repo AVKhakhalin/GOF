@@ -14,6 +14,8 @@ import ru.gof.factory_method.factory.DeveloperFactory
 import ru.gof.factory_method.factory.createDeveloperBySpecialisation
 import ru.gof.factory_method.items.Developer
 import ru.gof.factory_method.items.Specialisation
+import ru.gof.singleton.not_gof_realization.SingletonClass
+import ru.gof.singleton.not_gof_realization.SingletonClassJava
 import ru.gof.utils.showMessage
 
 class MainActivity : AppCompatActivity() {
@@ -97,6 +99,23 @@ class MainActivity : AppCompatActivity() {
             webTeamProjectFactory.getManagers(1).onEach { manager ->
                 manager.managingProject()
             }
+        //endregion
+
+        //region Singleton
+        showMessage("")
+        showMessage("")
+        showMessage("-----SINGLETON----")
+        val singletonClassJava: SingletonClassJava = SingletonClassJava.getInstance()
+        singletonClassJava.testField = "test 1"
+        val singletonClassJavaNext: SingletonClassJava = SingletonClassJava.getInstance()
+        showMessage(singletonClassJava.toString())
+        showMessage(singletonClassJavaNext.toString())
+        showMessage("")
+        val singletonClass: SingletonClass = SingletonClass.instance
+        singletonClass.testField = "test 2"
+        val singletonClassNext: SingletonClass = SingletonClass.instance
+        showMessage(singletonClass.toString())
+        showMessage(singletonClassNext.toString())
         //endregion
     }
 }
