@@ -2,11 +2,10 @@ package ru.gof.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import ru.gof.chain_of_responsibility.Message
-import ru.gof.chain_of_responsibility.NotifierImplMMS
-import ru.gof.chain_of_responsibility.NotifierImplSMS
-import ru.gof.chain_of_responsibility.NotifierImplServer
-import ru.gof.chain_of_responsibility.Priority
+import ru.gof.factory_method.factory.DeveloperFactory
+import ru.gof.factory_method.factory.createDeveloperBySpecialisation
+import ru.gof.factory_method.items.Developer
+import ru.gof.factory_method.items.Specialisation
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 //            insets
 //        }
 
-
+/*
         //region Chain of responsibility
         val notifierImplSMS: NotifierImplSMS = NotifierImplSMS(Priority.LOW)
         val notifierImplMMS: NotifierImplMMS = NotifierImplMMS(Priority.NORMAL).also {
@@ -35,7 +34,22 @@ class MainActivity : AppCompatActivity() {
         notifierImplSMS.notifyManager(
             Message("Сообщение о тяжёлой неисправности", Priority.HIGH))
         //endregion
+*/
+        //region Factory method
+        val developerFactoryJava: DeveloperFactory =
+            createDeveloperBySpecialisation(Specialisation.JAVA)
+        val developerJava: Developer = developerFactoryJava.createDeveloper()
+        developerJava.writeCode()
 
+        val developerFactoryCpp: DeveloperFactory =
+            createDeveloperBySpecialisation(Specialisation.CPP)
+        val developerCpp: Developer = developerFactoryCpp.createDeveloper()
+        developerCpp.writeCode()
 
+        val developerFactoryPhp: DeveloperFactory =
+            createDeveloperBySpecialisation(Specialisation.PHP)
+        val developerPhp: Developer = developerFactoryPhp.createDeveloper()
+        developerPhp.writeCode()
+        //endregion
     }
 }
