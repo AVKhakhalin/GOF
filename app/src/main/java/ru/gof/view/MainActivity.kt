@@ -7,6 +7,7 @@ import ru.gof.abstract_factory.run.runAbstractFactory
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibility
 import ru.gof.factory_method.run.runFactoryMethod
 import ru.gof.flyweight.run.runFlyweightRunner
+import ru.gof.observer.run.runObserverRunner
 import ru.gof.prototype.run.runPrototypeRunner
 import ru.gof.proxy.run.runProxyRunner
 import ru.gof.singleton.run.runSingletonRunner
@@ -41,6 +42,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Flyweight
         runFlyweightRunner()
+        //endregion
+
+        // region Observer
+        runObserverRunner()
         //endregion
     }
 }
