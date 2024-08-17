@@ -1,7 +1,6 @@
 package ru.gof.view
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import ru.gof.abstract_factory.run.runAbstractFactory
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibility

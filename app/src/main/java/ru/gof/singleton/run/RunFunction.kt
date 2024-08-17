@@ -1,13 +1,13 @@
 package ru.gof.singleton.run
 
+import ru.gof.singleton.SingletonLogClassJava
+import ru.gof.singleton.SingletonLogClassNull
+import ru.gof.singleton.not_gof_realization.SingletonClass
+import ru.gof.singleton.not_gof_realization.SingletonClassJava
 import ru.gof.singleton.not_gof_realization.SingletonLogClassByLazy
 import ru.gof.singleton.not_gof_realization.SingletonLogClassDoubleNullCheck
 import ru.gof.singleton.not_gof_realization.SingletonLogClassEnum
-import ru.gof.singleton.SingletonLogClassNull
-import ru.gof.singleton.SingletonLogClassJava
 import ru.gof.singleton.not_gof_realization.SingletonLogClassObject
-import ru.gof.singleton.not_gof_realization.SingletonClass
-import ru.gof.singleton.not_gof_realization.SingletonClassJava
 import ru.gof.utils.showMessage
 
 fun runSingletonRunner() {
