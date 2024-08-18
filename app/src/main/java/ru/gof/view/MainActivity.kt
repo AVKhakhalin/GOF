@@ -3,6 +3,7 @@ package ru.gof.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.gof.abstract_factory.run.runAbstractFactory
+import ru.gof.adapter.run.runAdapterRunner
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibility
 import ru.gof.factory_method.run.runFactoryMethod
 import ru.gof.flyweight.run.runFlyweightRunner
@@ -45,6 +46,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Observer
         runObserverRunner()
+        //endregion
+
+        // region Adapter
+        runAdapterRunner()
         //endregion
     }
 }
