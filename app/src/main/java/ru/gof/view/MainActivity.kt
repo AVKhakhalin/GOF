@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.gof.abstract_factory.run.runAbstractFactory
 import ru.gof.adapter.run.runAdapterRunner
+import ru.gof.bridge.run.runBridgeRunner
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibility
 import ru.gof.factory_method.run.runFactoryMethod
 import ru.gof.flyweight.run.runFlyweightRunner
@@ -50,6 +51,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Adapter
         runAdapterRunner()
+        //endregion
+
+        // region Bridge
+        runBridgeRunner()
         //endregion
     }
 }
