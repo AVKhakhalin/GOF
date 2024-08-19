@@ -5,7 +5,7 @@ import ru.gof.abstract_factory.projects.banking.BankingTeamProjectFactory
 import ru.gof.abstract_factory.projects.web.WebTeamProjectFactory
 import ru.gof.utils.showMessage
 
-fun runAbstractFactory() {
+fun runAbstractFactoryDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----ABSTRACT FACTORY----")

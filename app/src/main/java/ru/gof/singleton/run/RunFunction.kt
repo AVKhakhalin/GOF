@@ -10,7 +10,7 @@ import ru.gof.singleton.not_gof_realization.SingletonLogClassEnum
 import ru.gof.singleton.not_gof_realization.SingletonLogClassObject
 import ru.gof.utils.showMessage
 
-fun runSingletonRunner() {
+fun runSingletonDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----SINGLETON----")

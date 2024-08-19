@@ -5,7 +5,7 @@ import ru.gof.flyweight.DeveloperFactory
 import ru.gof.flyweight.DevelopersTypes
 import ru.gof.utils.showMessage
 
-fun runFlyweightRunner() {
+fun runFlyweightDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----FLYWEIGHT----")

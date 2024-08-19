@@ -6,7 +6,7 @@ import ru.gof.factory_method.items.Developer
 import ru.gof.factory_method.items.Specialisation
 import ru.gof.utils.showMessage
 
-fun runFactoryMethod() {
+fun runFactoryDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----FACTORY METHOD----")

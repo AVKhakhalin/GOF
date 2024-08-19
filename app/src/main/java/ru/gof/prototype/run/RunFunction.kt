@@ -4,7 +4,7 @@ import ru.gof.prototype.Project
 import ru.gof.prototype.ProjectFactory
 import ru.gof.utils.showMessage
 
-fun runPrototypeRunner() {
+fun runPrototypeDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----PROTOTYPE----")

@@ -8,7 +8,7 @@ val PHP_VACANCY_NAME: String = "Новая вакансия по PHP"
 val KOTLIN_VACANCY_NAME: String = "Новая вакансия по Kotlin"
 val JAVA_VACANCY_NAME: String = "Новая вакансия по Java"
 
-fun runObserverRunner() {
+fun runObserverDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----OBSERVER----")

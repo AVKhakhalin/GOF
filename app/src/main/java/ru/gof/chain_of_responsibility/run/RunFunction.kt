@@ -7,7 +7,7 @@ import ru.gof.chain_of_responsibility.NotifierImplServer
 import ru.gof.chain_of_responsibility.Priority
 import ru.gof.utils.showMessage
 
-fun runChainOfResponsibility() {
+fun runChainOfResponsibilityDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----CHAIN OF RESPONSIBILITY----")

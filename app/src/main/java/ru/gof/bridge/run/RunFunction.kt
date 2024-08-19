@@ -8,7 +8,7 @@ import ru.gof.bridge.Program
 import ru.gof.bridge.WebProgram
 import ru.gof.utils.showMessage
 
-fun runBridgeRunner() {
+fun runBridgeDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----BRIDGE----")

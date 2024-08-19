@@ -4,7 +4,7 @@ import ru.gof.adapter.AdapterApplicationToDatabase
 import ru.gof.adapter.Database
 import ru.gof.utils.showMessage
 
-fun runAdapterRunner() {
+fun runAdapterDemonstration() {
     showMessage("")
     showMessage("")
     showMessage("-----ADAPTER----")
