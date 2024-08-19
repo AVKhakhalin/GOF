@@ -6,18 +6,14 @@ import ru.gof.abstract_factory.run.runAbstractFactoryDemonstration
 import ru.gof.adapter.run.runAdapterDemonstration
 import ru.gof.bridge.run.runBridgeDemonstration
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
-import ru.gof.composite.Developer
-import ru.gof.composite.ProductionTeam
 import ru.gof.composite.run.runCompositeDemonstration
 import ru.gof.factory_method.run.runFactoryDemonstration
 import ru.gof.flyweight.run.runFlyweightDemonstration
+import ru.gof.interpreter.run.runInterpreterDemonstration
 import ru.gof.observer.run.runObserverDemonstration
 import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
 import ru.gof.singleton.run.runSingletonDemonstration
-import ru.gof.utils.showMessage
-import java.util.SortedMap
-import java.util.TreeMap
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +61,10 @@ class MainActivity : AppCompatActivity() {
 
         //region Composite
         runCompositeDemonstration()
+        //endregion
+
+        // region Interpreter
+        runInterpreterDemonstration()
         //endregion
     }
 }
