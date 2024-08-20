@@ -15,6 +15,7 @@ import ru.gof.observer.run.runObserverDemonstration
 import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
 import ru.gof.singleton.run.runSingletonDemonstration
+import ru.gof.template_method.run.runTemplateMethodDemonstration
 import ru.gof.visitor.run.runVisitorDemonstration
 
 class MainActivity : AppCompatActivity() {
@@ -75,6 +76,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Visitor
         runVisitorDemonstration()
+        //endregion
+
+        // region Template Method
+        runTemplateMethodDemonstration()
         //endregion
     }
 }
