@@ -1,13 +1,13 @@
 package ru.gof.decorator
 
 class TeamLeadJavaDeveloper(
-    developer: Developer
+    private val developer: Developer
 ): DeveloperDecorator(developer) {
-    private fun doReport(): String {
-        return "Написание отчёта заказчику."
+    fun doReport(): String {
+        return "Отправка отчёта Заказчику."
     }
 
     override fun doJob(): String {
-        return "${super.doJob()} ${doReport()}"
+        return "${developer.doJob()} ${doReport()}"
     }
 }

@@ -1,13 +1,13 @@
 package ru.gof.decorator
 
 class SeniorJavaDeveloper(
-    developer: Developer
+    private val developer: Developer
 ): DeveloperDecorator(developer) {
-    private fun doCodeReview(): String {
-        return "Выполнение CodeReview."
+    fun doCodeReview(): String {
+        return "Ревью кода."
     }
 
     override fun doJob(): String {
-        return "${super.doJob()} ${doCodeReview()}"
+        return "${developer.doJob()} ${doCodeReview()}"
     }
 }
