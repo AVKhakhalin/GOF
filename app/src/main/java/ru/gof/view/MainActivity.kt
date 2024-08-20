@@ -7,6 +7,7 @@ import ru.gof.adapter.run.runAdapterDemonstration
 import ru.gof.bridge.run.runBridgeDemonstration
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
 import ru.gof.composite.run.runCompositeDemonstration
+import ru.gof.decorator.run.runDecoratorDemonstration
 import ru.gof.factory_method.run.runFactoryDemonstration
 import ru.gof.flyweight.run.runFlyweightDemonstration
 import ru.gof.interpreter.run.runInterpreterDemonstration
@@ -65,6 +66,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Interpreter
         runInterpreterDemonstration()
+        //endregion
+
+        // region Decorator
+        runDecoratorDemonstration()
         //endregion
     }
 }
