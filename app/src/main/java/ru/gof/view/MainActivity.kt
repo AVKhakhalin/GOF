@@ -15,6 +15,7 @@ import ru.gof.observer.run.runObserverDemonstration
 import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
 import ru.gof.singleton.run.runSingletonDemonstration
+import ru.gof.visitor.run.runVisitorDemonstration
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,6 +71,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Decorator
         runDecoratorDemonstration()
+        //endregion
+
+        // region Visitor
+        runVisitorDemonstration()
         //endregion
     }
 }
