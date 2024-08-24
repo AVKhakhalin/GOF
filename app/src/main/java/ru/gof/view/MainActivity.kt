@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import ru.gof.abstract_factory.run.runAbstractFactoryDemonstration
 import ru.gof.adapter.run.runAdapterDemonstration
 import ru.gof.bridge.run.runBridgeDemonstration
+import ru.gof.builder.run.runBuilderDemonstration
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
 import ru.gof.composite.run.runCompositeDemonstration
 import ru.gof.decorator.run.runDecoratorDemonstration
@@ -80,6 +81,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Template Method
         runTemplateMethodDemonstration()
+        //endregion
+
+        // region Builder
+        runBuilderDemonstration()
         //endregion
     }
 }
