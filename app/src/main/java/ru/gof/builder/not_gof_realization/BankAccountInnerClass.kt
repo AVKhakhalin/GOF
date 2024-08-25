@@ -15,7 +15,6 @@ class BankAccountInnerClass private constructor(
 
     // Класс строитель
     class BankAccountInnerClassBuilder {
-        // Properties
         var name: String? = null
             private set
         var accountNumber: String? = null
@@ -24,7 +23,6 @@ class BankAccountInnerClass private constructor(
             private set
         var newsletter: Boolean = true
 
-        // Set methods
         fun withName(name: String) = this.apply {
             this.name = name
         }
