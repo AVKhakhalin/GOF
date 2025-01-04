@@ -6,7 +6,9 @@ import ru.gof.template_method.WebSitePersonsInfo
 import ru.gof.utils.showMessage
 
 fun runTemplateMethodDemonstration() {
-    showMessage("\n\n-----TEMPLATE METHOD----")
+    showMessage("")
+    showMessage("")
+    showMessage("-----TEMPLATE METHOD----")
     val newsWebSite: WebSite = WebSiteNews().also {
         it.showContent()
     }

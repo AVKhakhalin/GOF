@@ -5,7 +5,9 @@ import ru.gof.builder.not_gof_realization.BankAccountCompanionObject
 import ru.gof.utils.showMessage
 
 fun runBuilderDemonstration() {
-    showMessage("\n\n-----BUILDER----")
+    showMessage("")
+    showMessage("")
+    showMessage("-----BUILDER----")
     showMessage("       NOT GOF REALISATION:")
     val newAccount: BankAccountCompanionObject =
         BankAccountCompanionObject.Companion.BankAccountCompanionObjectBuilder(
