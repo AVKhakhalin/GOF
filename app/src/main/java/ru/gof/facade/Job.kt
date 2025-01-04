@@ -8,6 +8,6 @@ class Job(private val jobName: String) {
 
     // Функция для начала выполнения работы
     fun doJob() {
-        showMessage("Название текущей работы \"$jobName\"")
+        showMessage("Название текущей работы \"$jobName\".")
     }
 }

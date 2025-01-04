@@ -1,0 +1,13 @@
+package ru.gof.command
+
+// В конструкторе класса не заданы данные для базы данных для упрощения модели паттерна Command
+class Delete (private val database: Database): Command {
+    override fun execute(): Boolean {
+        return if (database.getInitialiseStatusDatabase()) {
+            database.delete()
+            true
+        } else {
+            false
+        }
+    }
+}

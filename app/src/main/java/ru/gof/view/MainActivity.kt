@@ -7,6 +7,7 @@ import ru.gof.adapter.run.runAdapterDemonstration
 import ru.gof.bridge.run.runBridgeDemonstration
 import ru.gof.builder.run.runBuilderDemonstration
 import ru.gof.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
+import ru.gof.command.run.runCommandDemonstration
 import ru.gof.composite.run.runCompositeDemonstration
 import ru.gof.decorator.run.runDecoratorDemonstration
 import ru.gof.facade.run.runFacadeDemonstration
@@ -40,27 +41,27 @@ class MainActivity : AppCompatActivity() {
         runSingletonDemonstration()
         //endregion
 
-        // region Proxy
+        //region Proxy
         runProxyDemonstration()
         //endregion
 
-        // region Prototype
+        //region Prototype
         runPrototypeDemonstration()
         //endregion
 
-        // region Flyweight
+        //region Flyweight
         runFlyweightDemonstration()
         //endregion
 
-        // region Observer
+        //region Observer
         runObserverDemonstration()
         //endregion
 
-        // region Adapter
+        //region Adapter
         runAdapterDemonstration()
         //endregion
 
-        // region Bridge
+        //region Bridge
         runBridgeDemonstration()
         //endregion
 
@@ -68,28 +69,32 @@ class MainActivity : AppCompatActivity() {
         runCompositeDemonstration()
         //endregion
 
-        // region Interpreter
+        //region Interpreter
         runInterpreterDemonstration()
         //endregion
 
-        // region Decorator
+        //region Decorator
         runDecoratorDemonstration()
         //endregion
 
-        // region Visitor
+        //region Visitor
         runVisitorDemonstration()
         //endregion
 
-        // region Template Method
+        //region Template Method
         runTemplateMethodDemonstration()
         //endregion
 
-        // region Builder
+        //region Builder
         runBuilderDemonstration()
         //endregion
 
         //region Facade
         runFacadeDemonstration()
+        //endregion
+
+        //region Command
+        runCommandDemonstration()
         //endregion
     }
 }
