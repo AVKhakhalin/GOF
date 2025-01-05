@@ -15,6 +15,7 @@ import ru.gof.factory_method.run.runFactoryDemonstration
 import ru.gof.flyweight.run.runFlyweightDemonstration
 import ru.gof.interpreter.run.runInterpreterDemonstration
 import ru.gof.iterator.run.runIteratorDemonstration
+import ru.gof.memento.run.runMementoDemonstration
 import ru.gof.observer.run.runObserverDemonstration
 import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
@@ -22,7 +23,7 @@ import ru.gof.singleton.run.runSingletonDemonstration
 import ru.gof.template_method.run.runTemplateMethodDemonstration
 import ru.gof.visitor.run.runVisitorDemonstration
 
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -100,6 +101,10 @@ class MainActivity : AppCompatActivity() {
 
         // region Iterator
         runIteratorDemonstration()
+        //endregion
+
+        // region Memento
+        runMementoDemonstration()
         //endregion
     }
 }
