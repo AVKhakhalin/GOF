@@ -14,6 +14,7 @@ import ru.gof.facade.run.runFacadeDemonstration
 import ru.gof.factory_method.run.runFactoryDemonstration
 import ru.gof.flyweight.run.runFlyweightDemonstration
 import ru.gof.interpreter.run.runInterpreterDemonstration
+import ru.gof.iterator.run.runIteratorDemonstration
 import ru.gof.observer.run.runObserverDemonstration
 import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
@@ -95,6 +96,10 @@ class MainActivity : AppCompatActivity() {
 
         //region Command
         runCommandDemonstration()
+        //endregion
+
+        // region Iterator
+        runIteratorDemonstration()
         //endregion
     }
 }
