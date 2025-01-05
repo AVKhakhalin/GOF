@@ -21,6 +21,7 @@ import ru.gof.prototype.run.runPrototypeDemonstration
 import ru.gof.proxy.run.runProxyDemonstration
 import ru.gof.singleton.run.runSingletonDemonstration
 import ru.gof.state.run.runStateDemonstration
+import ru.gof.strategy.run.runStrategyDemonstration
 import ru.gof.template_method.run.runTemplateMethodDemonstration
 import ru.gof.visitor.run.runVisitorDemonstration
 
@@ -110,6 +111,10 @@ class MainActivity: AppCompatActivity() {
 
         // region State
         runStateDemonstration()
+        //endregion
+
+        // region Strategy
+        runStrategyDemonstration()
         //endregion
     }
 }
