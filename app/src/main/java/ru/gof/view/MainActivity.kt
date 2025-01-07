@@ -2,29 +2,28 @@ package ru.gof.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import ru.gof.abstract_factory.run.runAbstractFactoryDemonstration
-import ru.gof.adapter.run.runAdapterDemonstration
-import ru.gof.bridge.run.runBridgeDemonstration
-import ru.gof.builder.run.runBuilderDemonstration
-import ru.gof.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
-import ru.gof.command.run.runCommandDemonstration
-import ru.gof.composite.run.runCompositeDemonstration
-import ru.gof.decorator.run.runDecoratorDemonstration
-import ru.gof.facade.run.runFacadeDemonstration
-import ru.gof.factory_method.run.runFactoryDemonstration
-import ru.gof.flyweight.run.runFlyweightDemonstration
-import ru.gof.interpreter.run.runInterpreterDemonstration
-import ru.gof.iterator.run.runIteratorDemonstration
-import ru.gof.mediator.run.runMediatorDemonstration
-import ru.gof.memento.run.runMementoDemonstration
-import ru.gof.observer.run.runObserverDemonstration
-import ru.gof.prototype.run.runPrototypeDemonstration
-import ru.gof.proxy.run.runProxyDemonstration
-import ru.gof.singleton.run.runSingletonDemonstration
-import ru.gof.state.run.runStateDemonstration
-import ru.gof.strategy.run.runStrategyDemonstration
-import ru.gof.template_method.run.runTemplateMethodDemonstration
-import ru.gof.visitor.run.runVisitorDemonstration
+import ru.gof.behavioral.chain_of_responsibility.run.runChainOfResponsibilityDemonstration
+import ru.gof.behavioral.command.run.runCommandDemonstration
+import ru.gof.behavioral.interpreter.run.runInterpreterDemonstration
+import ru.gof.behavioral.iterator.run.runIteratorDemonstration
+import ru.gof.behavioral.mediator.run.runMediatorDemonstration
+import ru.gof.behavioral.memento.run.runMementoDemonstration
+import ru.gof.behavioral.observer.run.runObserverDemonstration
+import ru.gof.behavioral.state.run.runStateDemonstration
+import ru.gof.behavioral.strategy.run.runStrategyDemonstration
+import ru.gof.behavioral.template_method.run.runTemplateMethodDemonstration
+import ru.gof.behavioral.visitor.run.runVisitorDemonstration
+import ru.gof.creational.abstract_factory.run.runAbstractFactoryDemonstration
+import ru.gof.creational.builder.run.runBuilderDemonstration
+import ru.gof.creational.factory_method.run.runFactoryDemonstration
+import ru.gof.creational.prototype.run.runPrototypeDemonstration
+import ru.gof.creational.singleton.run.runSingletonDemonstration
+import ru.gof.structural.bridge.run.runBridgeDemonstration
+import ru.gof.structural.composite.run.runCompositeDemonstration
+import ru.gof.structural.decorator.run.runDecoratorDemonstration
+import ru.gof.structural.facade.run.runFacadeDemonstration
+import ru.gof.structural.flyweight.run.runFlyweightDemonstration
+import ru.gof.structural.proxy.run.runProxyDemonstration
 
 class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +62,7 @@ class MainActivity: AppCompatActivity() {
         //endregion
 
         //region Adapter
-        runAdapterDemonstration()
+        ru.gof.structural.adapter.run.runAdapterDemonstration()
         //endregion
 
         //region Bridge
